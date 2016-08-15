@@ -8,6 +8,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     yum install -y docker
     service docker start
     /vagrant/mkimage-yum.sh insaneworks/centos7
-    cat centos7.tar.xz > /vagrant/centos7.tar.xz
   EOS
 end

@@ -127,6 +127,6 @@ if [ -z "$version" ]; then
     version=$name
 fi
 
-tar --numeric-owner -c -C "$target" . | xz > centos7.tar.xz
+tar --numeric-owner -c -C "$target" . | xz > /vagrant/centos7.tar.xz
 
 rm -rf "$target"
